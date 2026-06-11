@@ -16,6 +16,7 @@ const LANGUAGES = [
 
 const TRANSPORTS = [
   { title: "stdio       (local tools, Claude Desktop / Cursor)", value: "stdio" },
+  { title: "http        (remote / hosted, streamable HTTP)", value: "http" },
 ];
 
 function parseArgs(argv) {
@@ -101,8 +102,7 @@ async function run() {
         initial: 0,
       },
       {
-        // Only stdio ships today; http transport is on the roadmap.
-        type: null,
+        type: flags.transport || skipPrompts ? null : "select",
         name: "transport",
         message: "Transport",
         choices: TRANSPORTS,
@@ -127,7 +127,9 @@ async function run() {
     process.exit(1);
   }
 
-  const language = flags.lang || responses.language || "typescript";
+  const langAliases = { ts: "typescript", js: "typescript", typescript: "typescript", py: "python", python: "python" };
+  const rawLang = flags.lang || responses.language || "typescript";
+  const language = langAliases[String(rawLang).toLowerCase()] || rawLang;
   const transport = flags.transport || responses.transport || "stdio";
   const withExamples =
     flags.examples !== undefined
@@ -174,14 +176,15 @@ async function run() {
     },
   });
 
-  printNextSteps({ projectName, language });
+  printNextSteps({ projectName, language, transport });
 }
 
-function printNextSteps({ projectName, language }) {
+function printNextSteps({ projectName, language, transport }) {
   const isPy = language === "python";
+  const isHttp = transport === "http";
   const install = isPy ? "uv sync          (or: pip install -e \".[dev]\")" : "npm install";
-  const dev = isPy ? "python server.py" : "npm run dev";
-  const inspect = isPy ? "uv run mcp dev server.py" : "npm run inspect";
+  const dev = isPy ? (isHttp ? "uv run python server.py" : "python server.py") : "npm run dev";
+  const inspect = isHttp ? "npm run inspect" : isPy ? "uv run mcp dev server.py" : "npm run inspect";
 
   console.log("");
   console.log(pc.green(pc.bold("  Done.")) + pc.dim("  Next steps:"));
@@ -213,7 +216,8 @@ function printHelp() {
 
   ${pc.bold("Examples")}
     npm create mcp-forge@latest weather-server
-    npx mcp-forge my-server --lang ts --transport stdio -y
+    npx mcp-forge my-server --lang ts --transport http -y
+    npx mcp-forge my-server --lang python --transport stdio -y
 `);
 }
 

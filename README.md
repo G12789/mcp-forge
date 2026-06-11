@@ -12,6 +12,8 @@
 npm create mcp-forge@latest my-server
 ```
 
+![mcp-forge demo](assets/demo.svg)
+
 Most "create an MCP server" guides leave you with an empty skeleton and a 20-step setup. `mcp-forge` hands you a server that **runs, tests, and connects to Claude / Cursor on the first try** — then gets out of your way.
 
 ---
@@ -67,10 +69,11 @@ Heavy logic lives in a separate, pure `tools.ts` / `tools.py` so it stays trivia
 ```
 npm create mcp-forge@latest [name] [options]
 
-  --lang <ts|python>     language (default: prompt)
-  --examples <bool>      include the example primitives (default: true)
-  --yes, -y              accept defaults, skip prompts
-  --help, -h             show help
+  --lang <ts|python>         language (default: prompt)
+  --transport <stdio|http>   transport (default: prompt)
+  --examples <bool>          include the example primitives (default: true)
+  --yes, -y                  accept defaults, skip prompts
+  --help, -h                 show help
 ```
 
 ## Templates
@@ -78,13 +81,19 @@ npm create mcp-forge@latest [name] [options]
 | Language | Transport | Status |
 |---|---|:---:|
 | TypeScript | stdio | ✅ stable |
+| TypeScript | streamable HTTP | ✅ stable |
 | Python | stdio | ✅ stable |
-| TypeScript / Python | streamable HTTP | 🛠 on the roadmap |
+| Python | streamable HTTP | ✅ stable |
+
+Pick the transport at scaffold time:
+
+```bash
+npm create mcp-forge@latest my-server -- --lang ts --transport http -y
+```
 
 ## Roadmap
 
-- Streamable HTTP transport templates
-- `--with auth` (OAuth) preset
+- `--with auth` (OAuth) preset for HTTP transport
 - Extra example tool packs (HTTP fetch, SQLite, filesystem)
 - GitHub Action template to publish your server to npm / PyPI
 

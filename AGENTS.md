@@ -15,8 +15,10 @@ src/
   index.js      CLI entry: arg parsing, prompts, orchestration
   scaffold.js   recursive template copy + placeholder replacement
 templates/
-  typescript-stdio/   working TS MCP server template
-  python-stdio/       working Python MCP server template
+  typescript-stdio/   working TS MCP server (stdio)
+  typescript-http/    working TS MCP server (streamable HTTP, Express)
+  python-stdio/       working Python MCP server (stdio)
+  python-http/        working Python MCP server (streamable HTTP, FastMCP)
 ```
 
 ## Conventions

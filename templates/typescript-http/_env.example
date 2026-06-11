@@ -1,0 +1,5 @@
+# Copy to .env and fill in if your tools need secrets / API keys.
+# Never commit .env.
+
+PORT=3000
+# EXAMPLE_API_KEY=

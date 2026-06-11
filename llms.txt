@@ -7,7 +7,7 @@ Package name on npm: `create-mcp-forge`
 License: MIT
 
 ## What it generates
-- A runnable MCP server (stdio transport) in TypeScript or Python
+- A runnable MCP server in TypeScript or Python, with stdio or streamable-HTTP transport
 - Example primitives: tools `ping` and `text_stats`, resource `greeting://{name}`, prompt `summarize`
 - Passing unit tests, `.gitignore`, `.env.example`, and config (tsconfig / pyproject)
 - README with copy-paste Claude Desktop and Cursor configuration

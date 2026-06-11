@@ -1,0 +1,6 @@
+# Copy to .env and fill in if your tools need secrets / API keys.
+# Never commit .env.
+
+HOST=127.0.0.1
+PORT=8000
+# EXAMPLE_API_KEY=
