@@ -1,11 +1,11 @@
 {
-  "name": "create-mcp-forge",
+  "name": "create-mcpforge",
   "version": "0.1.0",
   "description": "Scaffold a working, testable, publishable Model Context Protocol (MCP) server in 30 seconds. TypeScript + Python, with example tools, built-in inspector and tests included.",
   "type": "module",
   "bin": {
-    "mcp-forge": "src/index.js",
-    "create-mcp-forge": "src/index.js"
+    "mcpforge": "src/index.js",
+    "create-mcpforge": "src/index.js"
   },
   "files": [
     "src",

@@ -212,8 +212,8 @@ function printHelp() {
   ${pc.cyan(pc.bold("mcp-forge"))} - scaffold a Model Context Protocol server
 
   ${pc.bold("Usage")}
-    npm create mcp-forge@latest [name] [options]
-    npx mcp-forge [name] [options]
+    npm create mcpforge@latest [name] [options]
+    npx mcpforge [name] [options]
 
   ${pc.bold("Options")}
     --lang <ts|python>          language (default: prompt)
@@ -224,9 +224,9 @@ function printHelp() {
     --version, -v               show version
 
   ${pc.bold("Examples")}
-    npm create mcp-forge@latest weather-server
-    npx mcp-forge my-server --lang ts --transport http -y
-    npx mcp-forge my-server --lang python --transport stdio -y
+    npm create mcpforge@latest weather-server
+    npx mcpforge my-server --lang ts --transport http -y
+    npx mcpforge my-server --lang python --transport stdio -y
 `);
 }
 

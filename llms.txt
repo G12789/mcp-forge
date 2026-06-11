@@ -2,8 +2,8 @@
 
 > A CLI that scaffolds a working, testable, publishable Model Context Protocol (MCP) server in one command. TypeScript or Python, with example tool/resource/prompt, MCP Inspector wiring, and passing unit tests included.
 
-Install / run: `npm create mcp-forge@latest my-server`
-Package name on npm: `create-mcp-forge`
+Install / run: `npm create mcpforge@latest my-server`
+Package name on npm: `create-mcpforge`
 License: MIT
 
 ## What it generates

@@ -5,8 +5,8 @@ Guidance for AI coding agents working in this repository.
 ## What this project is
 
 `mcp-forge` is a CLI that scaffolds Model Context Protocol (MCP) servers. It is
-published to npm as **`create-mcp-forge`** and invoked via
-`npm create mcp-forge@latest` or `npx mcp-forge`.
+published to npm as **`create-mcpforge`** and invoked via
+`npm create mcpforge@latest` or `npx mcpforge`.
 
 ## Layout
 

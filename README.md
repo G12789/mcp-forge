@@ -1,7 +1,7 @@
 # mcp-forge
 
 [![CI](https://github.com/G12789/mcp-forge/actions/workflows/ci.yml/badge.svg)](https://github.com/G12789/mcp-forge/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/create-mcp-forge?color=cb3837&logo=npm)](https://www.npmjs.com/package/create-mcp-forge)
+[![npm](https://img.shields.io/npm/v/create-mcpforge?color=cb3837&logo=npm)](https://www.npmjs.com/package/create-mcpforge)
 [![node](https://img.shields.io/badge/node-%3E%3D18-339933?logo=node.js&logoColor=white)](https://nodejs.org)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-ready-7c3aed)](https://modelcontextprotocol.io)
@@ -10,7 +10,7 @@
 > One command. TypeScript **or** Python. Example tools, the Inspector, and tests — all wired up.
 
 ```bash
-npm create mcp-forge@latest my-server
+npm create mcpforge@latest my-server
 ```
 
 ![mcp-forge demo](assets/demo.svg)
@@ -37,11 +37,11 @@ The official scaffolder gives you a bare bones starting point. `mcp-forge` is th
 
 ```bash
 # interactive
-npm create mcp-forge@latest
+npm create mcpforge@latest
 
 # non-interactive
-npm create mcp-forge@latest weather-server -- --lang ts -y
-npx mcp-forge weather-server --lang python -y
+npm create mcpforge@latest weather-server -- --lang ts -y
+npx mcpforge weather-server --lang python -y
 ```
 
 > **Before it lands on npm**, you can run it straight from GitHub:
@@ -74,7 +74,7 @@ Heavy logic lives in a separate, pure `tools.ts` / `tools.py` so it stays trivia
 ## Options
 
 ```
-npm create mcp-forge@latest [name] [options]
+npm create mcpforge@latest [name] [options]
 
   --lang <ts|python>         language (default: prompt)
   --transport <stdio|http>   transport (default: prompt)
@@ -95,7 +95,7 @@ npm create mcp-forge@latest [name] [options]
 Pick the transport at scaffold time:
 
 ```bash
-npm create mcp-forge@latest my-server -- --lang ts --transport http -y
+npm create mcpforge@latest my-server -- --lang ts --transport http -y
 ```
 
 ## Roadmap
