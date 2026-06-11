@@ -1,7 +1,7 @@
 {
   "name": "{{projectName}}",
   "version": "0.1.0",
-  "description": "An MCP server scaffolded with mcp-forge",
+  "description": "An MCP server scaffolded with mcp-quickstart",
   "type": "module",
   "bin": {
     "{{projectName}}": "dist/index.js"

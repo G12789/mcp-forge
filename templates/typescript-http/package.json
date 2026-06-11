@@ -1,7 +1,7 @@
 {
   "name": "{{projectName}}",
   "version": "0.1.0",
-  "description": "An MCP server (streamable HTTP) scaffolded with mcp-forge",
+  "description": "An MCP server (streamable HTTP) scaffolded with mcp-quickstart",
   "type": "module",
   "files": [
     "dist"

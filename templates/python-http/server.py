@@ -1,6 +1,6 @@
 """{{projectName}} - an MCP server (Python, streamable HTTP transport).
 
-Scaffolded with mcp-forge. Runs as an HTTP service on /mcp and ships with one
+Scaffolded with mcp-quickstart. Runs as an HTTP service on /mcp and ships with one
 of each MCP primitive as a working reference.
 """
 

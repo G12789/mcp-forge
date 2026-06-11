@@ -1,7 +1,7 @@
-# mcp-forge
+# mcp-quickstart
 
-[![CI](https://github.com/G12789/mcp-forge/actions/workflows/ci.yml/badge.svg)](https://github.com/G12789/mcp-forge/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/create-mcpforge?color=cb3837&logo=npm)](https://www.npmjs.com/package/create-mcpforge)
+[![CI](https://github.com/G12789/mcp-quickstart/actions/workflows/ci.yml/badge.svg)](https://github.com/G12789/mcp-quickstart/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/create-mcp-quickstart?color=cb3837&logo=npm)](https://www.npmjs.com/package/create-mcp-quickstart)
 [![node](https://img.shields.io/badge/node-%3E%3D18-339933?logo=node.js&logoColor=white)](https://nodejs.org)
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-ready-7c3aed)](https://modelcontextprotocol.io)
@@ -10,20 +10,20 @@
 > One command. TypeScript **or** Python. Example tools, the Inspector, and tests — all wired up.
 
 ```bash
-npm create mcpforge@latest my-server
+npm create mcp-quickstart@latest my-server
 ```
 
-![mcp-forge demo](assets/demo.svg)
+![mcp-quickstart demo](assets/demo.svg)
 
-Most "create an MCP server" guides leave you with an empty skeleton and a 20-step setup. `mcp-forge` hands you a server that **runs, tests, and connects to Claude / Cursor on the first try** — then gets out of your way.
+Most "create an MCP server" guides leave you with an empty skeleton and a 20-step setup. `mcp-quickstart` hands you a server that **runs, tests, and connects to Claude / Cursor on the first try** — then gets out of your way.
 
 ---
 
-## Why mcp-forge
+## Why mcp-quickstart
 
-The official scaffolder gives you a bare bones starting point. `mcp-forge` is the *"…but without the part you hate"* version:
+The official scaffolder gives you a bare bones starting point. `mcp-quickstart` is the *"…but without the part you hate"* version:
 
-| | Bare skeleton | **mcp-forge** |
+| | Bare skeleton | **mcp-quickstart** |
 |---|:---:|:---:|
 | Runs immediately | partly | ✅ |
 | Example **tool + resource + prompt** | – | ✅ |
@@ -37,17 +37,17 @@ The official scaffolder gives you a bare bones starting point. `mcp-forge` is th
 
 ```bash
 # interactive
-npm create mcpforge@latest
+npm create mcp-quickstart@latest
 
 # non-interactive
-npm create mcpforge@latest weather-server -- --lang ts -y
-npx mcpforge weather-server --lang python -y
+npm create mcp-quickstart@latest weather-server -- --lang ts -y
+npx mcp-quickstart weather-server --lang python -y
 ```
 
 > **Before it lands on npm**, you can run it straight from GitHub:
 >
 > ```bash
-> npx github:G12789/mcp-forge weather-server --lang ts -y
+> npx github:G12789/mcp-quickstart weather-server --lang ts -y
 > ```
 
 Then:
@@ -74,7 +74,7 @@ Heavy logic lives in a separate, pure `tools.ts` / `tools.py` so it stays trivia
 ## Options
 
 ```
-npm create mcpforge@latest [name] [options]
+npm create mcp-quickstart@latest [name] [options]
 
   --lang <ts|python>         language (default: prompt)
   --transport <stdio|http>   transport (default: prompt)
@@ -95,7 +95,7 @@ npm create mcpforge@latest [name] [options]
 Pick the transport at scaffold time:
 
 ```bash
-npm create mcpforge@latest my-server -- --lang ts --transport http -y
+npm create mcp-quickstart@latest my-server -- --lang ts --transport http -y
 ```
 
 ## Roadmap
@@ -109,8 +109,8 @@ Issues and PRs welcome — every issue gets a reply within 24h.
 ## Contributing
 
 ```bash
-git clone https://github.com/G12789/mcp-forge.git
-cd mcp-forge
+git clone https://github.com/G12789/mcp-quickstart.git
+cd mcp-quickstart
 npm install
 node src/index.js test-out --lang ts -y   # try the scaffolder locally
 ```

@@ -1,12 +1,12 @@
-# Contributing to mcp-forge
+# Contributing to mcp-quickstart
 
 Thanks for helping out. The bar is simple: **every generated template must run, build and pass tests out of the box.** CI enforces it.
 
 ## Development
 
 ```bash
-git clone https://github.com/G12789/mcp-forge.git
-cd mcp-forge
+git clone https://github.com/G12789/mcp-quickstart.git
+cd mcp-quickstart
 npm install
 
 # generate a project locally to eyeball it

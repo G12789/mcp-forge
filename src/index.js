@@ -68,7 +68,7 @@ function dirIsEmpty(dir) {
 
 function printBanner() {
   console.log("");
-  console.log(pc.cyan(pc.bold("  mcp-forge")) + pc.dim("  ·  forge a working MCP server in 30s"));
+  console.log(pc.cyan(pc.bold("  mcp-quickstart")) + pc.dim("  ·  forge a working MCP server in 30s"));
   console.log("");
 }
 
@@ -209,11 +209,11 @@ function printNextSteps({ projectName, language, transport }) {
 
 function printHelp() {
   console.log(`
-  ${pc.cyan(pc.bold("mcp-forge"))} - scaffold a Model Context Protocol server
+  ${pc.cyan(pc.bold("mcp-quickstart"))} - scaffold a Model Context Protocol server
 
   ${pc.bold("Usage")}
-    npm create mcpforge@latest [name] [options]
-    npx mcpforge [name] [options]
+    npm create mcp-quickstart@latest [name] [options]
+    npx mcp-quickstart [name] [options]
 
   ${pc.bold("Options")}
     --lang <ts|python>          language (default: prompt)
@@ -224,9 +224,9 @@ function printHelp() {
     --version, -v               show version
 
   ${pc.bold("Examples")}
-    npm create mcpforge@latest weather-server
-    npx mcpforge my-server --lang ts --transport http -y
-    npx mcpforge my-server --lang python --transport stdio -y
+    npm create mcp-quickstart@latest weather-server
+    npx mcp-quickstart my-server --lang ts --transport http -y
+    npx mcp-quickstart my-server --lang python --transport stdio -y
 `);
 }
 

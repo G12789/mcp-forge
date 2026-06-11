@@ -30,7 +30,7 @@ const PY_TEMPLATES = [
   { lang: "python", transport: "http" },
 ];
 
-const root = mkdtempSync(join(tmpdir(), "mcp-forge-e2e-"));
+const root = mkdtempSync(join(tmpdir(), "mcp-quickstart-e2e-"));
 let failures = 0;
 
 function log(msg) {

@@ -1,6 +1,6 @@
 # {{projectName}}
 
-An [MCP](https://modelcontextprotocol.io) server (TypeScript, stdio transport), scaffolded with [mcp-forge](https://github.com/G12789/mcp-forge).
+An [MCP](https://modelcontextprotocol.io) server (TypeScript, stdio transport), scaffolded with [mcp-quickstart](https://github.com/G12789/mcp-quickstart).
 
 It ships with one of each MCP primitive so you have a working reference:
 

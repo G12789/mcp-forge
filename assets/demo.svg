@@ -5,12 +5,12 @@
   <circle cx="22" cy="18" r="6" fill="#ff5f56"/>
   <circle cx="42" cy="18" r="6" fill="#ffbd2e"/>
   <circle cx="62" cy="18" r="6" fill="#27c93f"/>
-  <text x="410" y="23" text-anchor="middle" fill="#8b949e" font-size="13">mcp-forge</text>
+  <text x="410" y="23" text-anchor="middle" fill="#8b949e" font-size="13">mcp-quickstart</text>
 
   <text x="24" y="72" fill="#8b949e">$</text>
-  <text x="44" y="72" fill="#c9d1d9">npm create <tspan fill="#56d4dd">mcpforge@latest</tspan> <tspan fill="#e3b341">weather-server</tspan></text>
+  <text x="44" y="72" fill="#c9d1d9">npm create <tspan fill="#56d4dd">mcp-quickstart@latest</tspan> <tspan fill="#e3b341">weather-server</tspan></text>
 
-  <text x="24" y="108" fill="#7c3aed" font-weight="bold">mcp-forge</text>
+  <text x="24" y="108" fill="#7c3aed" font-weight="bold">mcp-quickstart</text>
   <text x="120" y="108" fill="#8b949e">ù  forge a working MCP server in 30s</text>
 
   <text x="24" y="140" fill="#56d4dd">?</text>

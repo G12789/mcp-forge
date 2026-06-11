@@ -1,11 +1,11 @@
 {
-  "name": "create-mcpforge",
-  "version": "0.1.0",
+  "name": "create-mcp-quickstart",
+  "version": "0.1.1",
   "description": "Scaffold a working, testable, publishable Model Context Protocol (MCP) server in 30 seconds. TypeScript + Python, with example tools, built-in inspector and tests included.",
   "type": "module",
   "bin": {
-    "mcpforge": "src/index.js",
-    "create-mcpforge": "src/index.js"
+    "mcp-quickstart": "src/index.js",
+    "create-mcp-quickstart": "src/index.js"
   },
   "files": [
     "src",
@@ -42,6 +42,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/G12789/mcp-forge.git"
+    "url": "git+https://github.com/G12789/mcp-quickstart.git"
   }
 }

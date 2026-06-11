@@ -1,6 +1,6 @@
 # {{projectName}}
 
-An [MCP](https://modelcontextprotocol.io) server (Python, **streamable HTTP** transport), scaffolded with [mcp-forge](https://github.com/G12789/mcp-forge).
+An [MCP](https://modelcontextprotocol.io) server (Python, **streamable HTTP** transport), scaffolded with [mcp-quickstart](https://github.com/G12789/mcp-quickstart).
 
 Runs as an HTTP service (great for remote / hosted deployments) and ships with one of each MCP primitive:
 

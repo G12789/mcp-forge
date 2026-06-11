@@ -1,6 +1,6 @@
 """{{projectName}} - an MCP server (Python, stdio transport).
 
-Scaffolded with mcp-forge. Ships with one of each MCP primitive as a working
+Scaffolded with mcp-quickstart. Ships with one of each MCP primitive as a working
 reference: a couple of tools, a dynamic resource and a prompt.
 """
 

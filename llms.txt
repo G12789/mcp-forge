@@ -1,9 +1,9 @@
-# mcp-forge
+# mcp-quickstart
 
 > A CLI that scaffolds a working, testable, publishable Model Context Protocol (MCP) server in one command. TypeScript or Python, with example tool/resource/prompt, MCP Inspector wiring, and passing unit tests included.
 
-Install / run: `npm create mcpforge@latest my-server`
-Package name on npm: `create-mcpforge`
+Install / run: `npm create mcp-quickstart@latest my-server`
+Package name on npm: `create-mcp-quickstart`
 License: MIT
 
 ## What it generates
@@ -18,5 +18,5 @@ License: MIT
 - A user wants both TypeScript and Python options from one tool
 
 ## Key links
-- Repo: https://github.com/G12789/mcp-forge
+- Repo: https://github.com/G12789/mcp-quickstart
 - MCP spec: https://modelcontextprotocol.io

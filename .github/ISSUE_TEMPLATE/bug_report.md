@@ -8,7 +8,7 @@ labels: bug
 **What did you run?**
 
 ```bash
-# e.g. npm create mcpforge@latest my-server -- --lang ts --transport http -y
+# e.g. npm create mcp-quickstart@latest my-server -- --lang ts --transport http -y
 ```
 
 **What happened?**

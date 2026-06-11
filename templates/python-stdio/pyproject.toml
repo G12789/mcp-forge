@@ -1,7 +1,7 @@
 [project]
 name = "{{projectName}}"
 version = "0.1.0"
-description = "An MCP server scaffolded with mcp-forge"
+description = "An MCP server scaffolded with mcp-quickstart"
 requires-python = ">=3.10"
 dependencies = [
     "mcp>=1.2.0",
